@@ -8,13 +8,32 @@
   <body>
     <div class="navbar navbar-default navbar-static-top">
       <div class='container'>
-        <a href='/' class='navbar-brand'>
-          Blasting Off With Boostrap
-        </a>
+        <div class='navbar-header'>
+          <a href='index.html' class='navbar-brand'>
+            Blasting Off With Boostrap
+          </a>
+  <!-- Navbar that only shows up on small screens/mobile devices -->
+          <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+        </div>
         <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
           <li><a href='tickets.html'>Tickets</a></li>
           <li><a href='stations.html'>Stations</a></li>
-          <li><a href='about.html'>About</a></li>
+          <li><a href='about.html' data-target='#' data-toggle='dropdown'>About<span class='caret'></span></a>
+            <ul class='dropdown-menu'>
+              <li><a href='story.html'>Our Story</a></li>
+              <li><a href='contact.html'> Contact Us</a></li>
+              <li class='divider'></li>
+              <li><a href="/blog">Blog</a></li>
+              <li class='divider'></li>
+              <li><a href='http://twitter.com/limktng'>Twitter</a></li>
+              <li><a href='https://www.facebook.com/lastingimpressionsmarketing/'>Facebook</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
